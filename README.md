@@ -11,3 +11,5 @@ Using the path to the python executable found within the environment the python 
 The stderr and stdout are printed.
 
 Not included in this repo are three text files, username.txt, password.txt and host.txt which all contain a single line containing either the password, username or hostname (IP address).
+
+See 'Generating GEL reports' on barista for instructions for installation of dependancies/python packages
