@@ -2,11 +2,15 @@
 
  This script is designed to be called by MOKA and run from a trust machine (using the python executable on the S drive).
 
-The script takes an argument -g <GEL Participant ID>
+The script takes an argument -g GEL Participant ID 
 
-It then ssh's into the server provided in the host.txt file using the username and password provided in the password and username files.
+eg 
 
-Using the path to the python executable found within the environment the python script is called, passing the GEL participant ID as an argument.
+`S:\Genetics_Data2\Array\Software\Python\python.exe ssh_n_run.py -g 12345678`
+
+Using the paramiko module it then ssh's into the server using the host, username and password provided in the host.txt password.txt and username.txt files.
+
+Using the full path to the python executable found within the pyODBC conda environment the gel_report.py script is called, passing the GEL participant ID as an argument.
 
 The stderr and stdout are printed.
 
